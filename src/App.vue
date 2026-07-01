@@ -31,10 +31,15 @@ body {
 .app {
   display: flex;
   flex-direction: column;
+<<<<<<< Updated upstream
   align-items: center;
+=======
+  align-items: flex-start;
+>>>>>>> Stashed changes
   gap: 1.5rem;
   padding: 2rem;
-  text-align: center;
+  width: 100%;
+  max-width: 900px;
 }
 
 .title {
@@ -52,6 +57,7 @@ body {
   color: #94a3b8;
 }
 
+<<<<<<< Updated upstream
 .hint {
   font-size: 0.9rem;
   color: #64748b;
@@ -66,3 +72,12 @@ body {
 </style>
 
 
+=======
+.demo-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+</style>
+
+>>>>>>> Stashed changes
