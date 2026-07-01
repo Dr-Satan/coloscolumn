@@ -4,12 +4,12 @@
   "private": false,
   "description": "Column visibility selector for Element Plus tables",
   "type": "module",
-  "main": "./dist/coloscolumn.umd.js",
-  "module": "./dist/coloscolumn.es.js",
+  "main": "./src/index.ts",
+  "module": "./src/index.ts",
   "exports": {
     ".": {
-      "import": "./dist/coloscolumn.es.js",
-      "require": "./dist/coloscolumn.umd.js"
+      "import": "./src/index.ts",
+      "require": "./src/index.ts"
     }
   },
   "files": [
@@ -20,6 +20,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "prepare": "vite build",
     "preview": "vite preview"
   },
   "peerDependencies": {
