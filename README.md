@@ -104,5 +104,5 @@ coloscolumn/
 
 ## License
 
-MIT © Pontoizeau Erwan
+MIT © Dr-Satan
 
