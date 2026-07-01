@@ -1,23 +1,12 @@
 <template>
   <main class="app">
-    <h1 class="title">Coloscolumn</h1>
-    <p class="subtitle">A button to rule them all!</p>
-    <ColosButton @colos-click="onColosClick" />
-    <p v-if="clickCount > 0" class="counter">
-      Clicked {{ clickCount }} time{{ clickCount === 1 ? '' : 's' }} 👑
-    </p>
+    <h1 class="title">ColosColumn</h1>
+    <p class="subtitle">Column visibility selector for Element Plus tables</p>
+    <p class="hint">Pass a <code>tableInstance</code> ref to <code>&lt;ColosColumn&gt;</code> to get started.</p>
   </main>
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import ColosButton from './components/ColosButton.vue'
-
-const clickCount = ref(0)
-
-function onColosClick() {
-  clickCount.value++
-}
 </script>
 
 <style>
@@ -43,13 +32,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 1.5rem;
   padding: 2rem;
   text-align: center;
 }
 
 .title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 900;
   letter-spacing: 0.05em;
   background: linear-gradient(135deg, #a78bfa, #f472b6);
@@ -59,18 +48,21 @@ body {
 }
 
 .subtitle {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #94a3b8;
 }
 
-.counter {
-  font-size: 1.2rem;
-  color: #c4b5fd;
-  animation: fadeIn 0.3s ease;
+.hint {
+  font-size: 0.9rem;
+  color: #64748b;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-4px); }
-  to   { opacity: 1; transform: translateY(0); }
+.hint code {
+  color: #a78bfa;
+  background: #1e1b2e;
+  padding: 0.1rem 0.4rem;
+  border-radius: 0.3rem;
 }
 </style>
+
+
