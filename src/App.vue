@@ -2,11 +2,42 @@
   <main class="app">
     <h1 class="title">ColosColumn</h1>
     <p class="subtitle">Column visibility selector for Element Plus tables</p>
+<<<<<<< Updated upstream
     <p class="hint">Pass a <code>tableInstance</code> ref to <code>&lt;ColosColumn&gt;</code> to get started.</p>
+=======
+
+    <div class="demo-toolbar">
+      <ColosColumn :table-instance="tableRef" />
+    </div>
+
+    <el-table ref="tableRef" :data="tableData" style="width: 100%">
+      <el-table-column type="selection" width="50" />
+      <el-table-column prop="name" label="Name" />
+      <el-table-column prop="role" label="Role" />
+      <el-table-column prop="department" label="Department" />
+      <el-table-column prop="location" label="Location" />
+      <el-table-column prop="status" label="Status" />
+    </el-table>
+>>>>>>> Stashed changes
   </main>
 </template>
 
 <script setup>
+<<<<<<< Updated upstream
+=======
+import { ref } from 'vue'
+import ColosColumn from './components/ColosColumn.vue'
+
+const tableRef = ref(null)
+
+const tableData = [
+  { name: 'Alice Martin',  role: 'Engineer',   department: 'R&D',     location: 'Paris',    status: 'Active'   },
+  { name: 'Bob Dupont',    role: 'Designer',    department: 'Product', location: 'Lyon',     status: 'Active'   },
+  { name: 'Clara Leroy',   role: 'Manager',     department: 'Sales',   location: 'Nantes',   status: 'On leave' },
+  { name: 'David Chen',    role: 'DevOps',      department: 'Infra',   location: 'Remote',   status: 'Active'   },
+  { name: 'Emma Bernard',  role: 'Analyst',     department: 'Finance', location: 'Bordeaux', status: 'Inactive' },
+]
+>>>>>>> Stashed changes
 </script>
 
 <style>
@@ -32,7 +63,11 @@ body {
   display: flex;
   flex-direction: column;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   align-items: center;
+=======
+  align-items: flex-start;
+>>>>>>> Stashed changes
 =======
   align-items: flex-start;
 >>>>>>> Stashed changes
@@ -58,6 +93,7 @@ body {
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 .hint {
   font-size: 0.9rem;
   color: #64748b;
@@ -73,6 +109,8 @@ body {
 
 
 =======
+=======
+>>>>>>> Stashed changes
 .demo-toolbar {
   display: flex;
   align-items: center;
@@ -80,4 +118,7 @@ body {
 }
 </style>
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
